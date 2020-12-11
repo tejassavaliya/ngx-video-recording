@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "my-angular-app": {
+    "ngx-video-recording": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/my-angular-app",
+            "outputPath": "dist/ngx-video-recording",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-angular-app:build"
+            "browserTarget": "ngx-video-recording:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "my-angular-app:build:production"
+              "browserTarget": "ngx-video-recording:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "my-angular-app:build"
+            "browserTarget": "ngx-video-recording:build"
           }
         },
         "test": {
@@ -111,15 +111,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "my-angular-app:serve"
+            "devServerTarget": "ngx-video-recording:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "my-angular-app:serve:production"
+              "devServerTarget": "ngx-video-recording:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "my-angular-app"
+  "defaultProject": "ngx-video-recording"
 }
