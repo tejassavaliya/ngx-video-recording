@@ -2,4 +2,42 @@
     align-items: center;
     display: flex;
     justify-content: center;
+    margin-top: 100px;
+}
+
+
+
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mat-toolbar.mat-primary {
+    background: #3f51b5;
+    color: #fff;
+}
+
+
+.app-name {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.mat-toolbar .mat-button {
+  margin-left: auto;
+  color: #fff;
+}
+
+.mat-toolbar .mat-button .mat-icon {
+    height: 26px;
+    width: 26px;
+  }
+.mat-toolbar,
+.mat-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
 }

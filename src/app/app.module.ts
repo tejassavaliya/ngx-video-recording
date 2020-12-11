@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VideojsRecordingComponent } from './videojs-recording/videojs-recording.component';
+import { MaterialDesignModule } from './shared/material.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { VideojsRecordingComponent } from './videojs-recording/videojs-recording
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MaterialDesignModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
